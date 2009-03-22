@@ -122,7 +122,7 @@ fi
 %config(noreplace)%{_sysconfdir}/%{pkgname}/config/certmap.conf
 %config(noreplace)%verify(not md5 mtime size) /etc/sysconfig/%{pkgname}
 %{_datadir}/%{pkgname}
-%{_initrddir}/%{pkgname}
+/etc/rc.d/init.d/%{pkgname}
 %attr(755,root,root) %{_bindir}/*
 %attr(755,root,root) %{_sbindir}/*
 %dir %{_libdir}/%{pkgname}
